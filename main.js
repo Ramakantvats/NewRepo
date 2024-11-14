@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended:false}))
 app.set("view engine","ejs")
 app.set("views",path.resolve("./views"))
 app.use(express.static(path.resolve("./views")))
-app.use(Cookieparser())
+app.use(Cookieparser()) 
 
 
 // Note- Both ways to server static folder
