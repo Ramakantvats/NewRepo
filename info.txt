@@ -8,4 +8,5 @@ Step3-: After this if i can click on projects so i can use their functionalities
 
 Step4-: i can also send msg from contact section of portfolio website and this msg will store in portfolio collection in LOGIN-DATABASE
 
-
+Note -: i set repository name as -> repo to upload on github
+git push repo main
