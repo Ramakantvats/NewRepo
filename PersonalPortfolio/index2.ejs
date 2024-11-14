@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                 <div class="logo">
+                    <h1>R<p>amakant</p></h1>
+                 </div>
+                <ul class="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()" ></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <br> <span>Ramakant Vats</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adding about section which contain image and text in row -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images2/ramakant_vats_image.jpg" alt="user image" height="550px" width="615px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nostrum distinctio ut quos similique maxime, modi molestias earum iure amet!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul >
+                            <li ><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                        </ul>
+                        <ul>
+                            <li><span>Node.js & Express.js</span></li>
+                            <li><span>MongoDB</span></li>
+                            <li><span>Git & Github</span></li>
+                        </ul>
+                        <ul>
+                            <li><span>Docker</span> </li>
+                            <li><span>Python</span></li>
+                            <li><span>Linux</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-current</span> <br> UI/UX Design traning in institute</li>
+                            <li><span>2019-2021</span> <br> Team leader in Starbuks company </li>
+                            <li><span>2007-2019</span> <br> UI/UX Design Executive</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li class="animation"><span>10th(82.4%)</span> <br> Ch.Chhoutu Ram Senior Secondry School</li>
+                            <li class="animation"><span>12th(94.4%)</span> <br> Ch.Chhoutu Ram Senior Secondry School</li>
+                            <li class="animation"><span>B.Tech(CSE)</span> <br> NGF COLLEGE OF ENGINEERING AND TECHNOLOGY,(YMCA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------- Services ------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum nemo placeat blanditiis sed cumque expedita eaque, quos labore omnis tempora.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum nemo placeat blanditiis sed cumque expedita eaque, quos labore omnis tempora.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum nemo placeat blanditiis sed cumque expedita eaque, quos labore omnis tempora.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+<!-- ------------------- Projects------------------ -->
+     <div id="projects">
+        <div class="container">
+            <h2 class="sub-title">Projects</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images2/url-shortner image.jpg" alt="blog app image">
+                    <div class="layer">
+                        <h1>URL-Shortner</h1>
+                        <p>url-shortner created by Node.js & MongoDB<br>it can short long url <br>can also see total click and other analytics <br> of short-url</p>
+                        <a href="/url-shortner"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images2/currency converter image.png" alt="currency convertor image">
+                    <div class="layer">
+                        <h1>Currency Converter</h1>
+                        <p>This website  convert amounts from <br> one currency to another</p>
+                        <a href="/currency-converter"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images2/Restful api image.png" alt="RestFul api image" class="restful">
+                    <div class="layer">
+                        <h1>Rest API</h1>
+                        <p>It accepts requests <br> (such as GET, POST, PUT, DELETE) <br>  mapped it specific route and send response.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- --------------------  -->
+                <div class="work seemorehiding">
+                    <img src="images2/Amazon clone 1.png" alt="Amazon clone image" height="600px">
+                    <div class="layer">
+                        <h1>Amazon clone</h1>
+                        <p>Created a Amazon clone <br> i copyied the fronted of amazon page</p>
+                        <a href="/Amazon-clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#projects" class="btn seemore" onclick="openprojects()">See more</a>
+        </div>
+     </div>
+<!-- ------------- Contact ---------------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rvvats6366@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                      <a href="https://www.facebook.com/ramakant.vats.731"><i class="fa-brands fa-facebook"></i></a>  
+                       <a href="https://www.instagram.com/ramakant.pandit_/"><i class="fa-brands fa-instagram"></i></a> 
+                        <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/images2/RamakantvatsCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="/portfolio-message" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Ramakant vats.Enjoy the look of website<i class="fa-regular fa-heart" id="heart"></i> </p>
+        </div>
+     </div>
+
+
+    <!-- Adding javascript -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        function openprojects(){
+            var hiddenProjects = document.querySelectorAll(".seemorehiding")
+            for(hiddenProjects of hiddenProjects){
+                hiddenProjects.style.display="flex";
+            }
+        }
+
+    </script>
+<!-- for bringing the side menu when click on 3 bars -->
+    <script>
+        var sidemenu = document.querySelector(".sidemenu")
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

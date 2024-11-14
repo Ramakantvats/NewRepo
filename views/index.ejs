@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Creating Login Form -->
+    <div class="container">
+        <div class="curved-shape"></div>
+        <div class="curved-shape2"></div>
+      <div class="form-box login">
+        <h2 class="animation" style="--D:0; --S:21">Login</h2>
+        <form action="/signin" method="post">
+          <div class="input-box animation" style="--D:1 ; --S:22">
+            <input type="email" name="email" required />
+            <label for="" >Email</label>
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-box animation"  style="--D:2 ; --S:23">
+            <input type="password" name="password" required />
+            <label for="">password</label>
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="msg" style="color: red;">
+            <%if(locals.msg){%>
+              <%=msg%>
+            <%} %>
+          </div>
+          <div class="input-box animation" style="--D:3; --S:24">
+            <button class="btn" type="submit">Login</button>
+          </div>
+          <div class="regi-link animation" style="--D:4; --S:25">
+            <p>
+              Don't have account? <a href="#" class="SignUp-Link ">Sign Up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="info-content login">
+        <h2 class="animation" style="--D:0;--S:20">Welcome back!</h2>
+        <p class="animation" style="--D:1; --S:21">Log in to access your account and continue where you left off. We're glad to see you again!"</p>
+      </div>
+<!-- For Registeration -->
+      <div class="form-box Register">
+        <h2 class="animation" style="--li:17; --S:0">Register</h2>
+        <form action="/register" method="post">
+          <div class="input-box animation"  style="--li:18; --S:1">
+            <input type="text" name="username" required />
+            <label for="">username</label>
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-box animation"  style="--li:18; --S:1">
+            <input type="email" name="email" required />
+            <label for="">Email</label>
+            <i class='bx bxl-gmail'></i>
+          </div>
+        
+          <div class="input-box animation"  style="--li:19; --S:2">
+            <input type="password" name="password" required />
+            <label for="">Password</label>
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="input-box animation"  style="--li:19; --S:2.5">
+            <input type="text" name="role" required />
+            <label for="">Role</label>
+            <i class='bx bxs-user-detail'></i>
+          </div>
+          <div class="input-box animation"  style="--li:20; --S:3">
+            <button class="btn" type="submit">Register</button>
+          </div>
+          <div class="regi-link animation"  style="--li:21; --S:4">
+            <p>
+              Already have account? <a href="#" class="SignIn-Link">Sign In</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="info-content Register">
+        <h2 class="animation"  style="--li:17; --S:0;">Welcome back!</h2>
+        <p class="animation"  style="--li:18; --S:1;">Create an account to enjoy exclusive features, stay updated, and personalize your experience with us. Let’s get started!"</p>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

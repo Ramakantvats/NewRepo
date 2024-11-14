@@ -1,0 +1,11 @@
+step1-: In this project firstly if we did not ever login so login and signup page will open we can login or signp after login
+uuid will be set in my browser cookie and when next time i will try to access portfolio website it will not ask
+for login or signup directly open portfolio website.
+
+step2 -: In this when we signup/register as a new user it will store our username,email,password in database(collection-register)
+
+Step3-: After this if i can click on projects so i can use their functionalities like url-shortner,Amazon-clone,currency-converter
+
+Step4-: i can also send msg from contact section of portfolio website and this msg will store in portfolio collection in LOGIN-DATABASE
+
+
